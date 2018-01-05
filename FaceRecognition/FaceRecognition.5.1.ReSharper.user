@@ -1,0 +1,850 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="3C002E94-9F83-43B4-82FA-EFB16704BDBD/f:Constants.cs" caret="116" fromTop="6" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:FaceDetectionControl.xaml.cs" caret="0" fromTop="0" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:RecognitionAlgorithmsControl.xaml" caret="75" fromTop="0" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:RecognitionAlgorithmsControl.xaml.cs" caret="230" fromTop="6" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:ResultPanelControl.xaml.cs" caret="172" fromTop="6" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:ResultPanelControl.xaml" caret="230" fromTop="3" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TuningPanelControl.xaml.cs" caret="172" fromTop="6" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TuningPanelControl.xaml" caret="277" fromTop="5" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/f:MainWindow.xaml" caret="335" fromTop="5" />
+      <File id="3C002E94-9F83-43B4-82FA-EFB16704BDBD/f:FaceAddedEventArgs.cs" caret="0" fromTop="0" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:CustomEventArgs/f:TrainAndTestViewReadyEventArgs.cs" caret="157" fromTop="5" />
+      <File id="3C002E94-9F83-43B4-82FA-EFB16704BDBD/f:FaceDataBasesRepository.cs" caret="0" fromTop="0" />
+      <File id="3C002E94-9F83-43B4-82FA-EFB16704BDBD/f:ModelBase.cs" caret="0" fromTop="0" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Delegates/f:CustomDelegates.cs" caret="289" fromTop="8" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:ViewModel/f:TrainAndTestFaceViewModel.cs" caret="784" fromTop="23" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:FaceRecognitionAlgorithmsWindow.xaml.cs" caret="210" fromTop="8" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:ViewModel/f:ViewModelBase.cs" caret="3515" fromTop="60" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/f:MainWindow.xaml.cs" caret="961" fromTop="9" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Styles/f:WindowStyle.xaml" caret="357" fromTop="4" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:FaceDetectionWindow.xaml" caret="375" fromTop="5" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:AboutWindow.xaml" caret="339" fromTop="5" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:FaceRecognitionAlgorithmsWindow.xaml" caret="485" fromTop="1" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/f:App.xaml" caret="567" fromTop="9" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Styles/f:ButtonStyle.xaml" caret="712" fromTop="11" />
+      <File id="BFBB843B-EDF3-4AE5-AAFF-F7C0DC235F28/d:Themes/f:Generic.cs" caret="1391" fromTop="14" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="4620" fromTop="18" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml" caret="7512" fromTop="0" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:TrainAndTestImagesWindow.xaml" caret="1363" fromTop="11" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:TrainAndTestImagesWindow.xaml.cs" caret="887" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/f:App.xaml" caret="567" fromTop="9" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Styles/f:ButtonStyle.xaml" caret="410" fromTop="7" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Styles/f:ButtonStyle.xaml" caret="327" fromTop="4" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml" caret="6045" fromTop="8" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml" caret="8084" fromTop="8" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml" caret="7152" fromTop="4" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml" caret="5273" fromTop="7" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Styles/f:ButtonStyle.xaml" caret="712" fromTop="11" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="5355" fromTop="7" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3306" fromTop="22" />
+      <File id="BFBB843B-EDF3-4AE5-AAFF-F7C0DC235F28/d:Themes/f:Generic.cs" caret="1210" fromTop="11" />
+      <File id="BFBB843B-EDF3-4AE5-AAFF-F7C0DC235F28/d:Themes/f:Generic.cs" caret="1391" fromTop="17" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="618" fromTop="14" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="4396" fromTop="3" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3952" fromTop="13" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3198" fromTop="14" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3153" fromTop="8" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3652" fromTop="20" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3814" fromTop="4" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="4396" fromTop="18" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="914" fromTop="13" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="4857" fromTop="18" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3153" fromTop="4" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="3596" fromTop="16" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="4037" fromTop="11" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml.cs" caret="4620" fromTop="18" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml" caret="5662" fromTop="7" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Controls/f:TrainAndTestFaceControl.xaml" caret="7702" fromTop="8" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:TrainAndTestImagesWindow.xaml" caret="1363" fromTop="11" />
+      <File id="C971BD0E-994B-401A-A1B8-72E5E49DACAA/d:Windows/f:TrainAndTestImagesWindow.xaml.cs" caret="887" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="TrainAndFaceRecognize" priority="0" />
+      <Item value="new" priority="76" />
+      <Item value="TrainAndFaceRecognizeWindow" priority="0" />
+      <Item value="View" priority="1" />
+      <Item value="EigenfacesFaceRecognition" priority="0" />
+      <Item value="UserControls" priority="0" />
+      <Item value="Visibility`0" priority="0" />
+      <Item value="Thread`0" priority="1" />
+      <Item value="Hidden" priority="1" />
+      <Item value="public" priority="61" />
+      <Item value="FaceImagesRepository`0" priority="0" />
+      <Item value="List&lt;string&gt;" priority="3" />
+      <Item value="ObservableCollection&lt;string&gt;" priority="4" />
+      <Item value="ObservableCollection&lt;Image&gt;" priority="1" />
+      <Item value="private" priority="59" />
+      <Item value="void" priority="20" />
+      <Item value="FaceImages`0" priority="7" />
+      <Item value="FaceImagesRepository" priority="0" />
+      <Item value="FaceDataBases`0" priority="1" />
+      <Item value="FaceDataBasesRepository`0" priority="3" />
+      <Item value="FaceDataBasesRepository" priority="2" />
+      <Item value="foreach" priority="14" />
+      <Item value="List" priority="8" />
+      <Item value="var" priority="34" />
+      <Item value="_faceDataBasesRepository" priority="1" />
+      <Item value="return" priority="40" />
+      <Item value="_imageNamesCollection" priority="0" />
+      <Item value="_faceImageRepository" priority="0" />
+      <Item value="string" priority="38" />
+      <Item value="int" priority="8" />
+      <Item value="if" priority="48" />
+      <Item value="Resources.BusyControlImage" priority="0" />
+      <Item value="Resources`0" priority="1" />
+      <Item value="Resources" priority="0" />
+      <Item value="DbListControlViewModel`0" priority="0" />
+      <Item value="dbNamesList" priority="1" />
+      <Item value="DbNames" priority="2" />
+      <Item value="ObservableCollection" priority="6" />
+      <Item value="IDisposable`0" priority="0" />
+      <Item value="abstract" priority="1" />
+      <Item value="ViewModelBase`0" priority="3" />
+      <Item value="this" priority="14" />
+      <Item value="DbListControlView`0" priority="0" />
+      <Item value="DbListControlViewModel" priority="0" />
+      <Item value="_dbViewModel" priority="0" />
+      <Item value="_faceDataBases" priority="8" />
+      <Item value="FaceDataBases" priority="1" />
+      <Item value="FaceImagesListControlViewModel`0" priority="0" />
+      <Item value="FaceImages" priority="4" />
+      <Item value="BusyControlView`0" priority="0" />
+      <Item value="Bottom" priority="0" />
+      <Item value="throw" priority="15" />
+      <Item value="AbandonedMutexException" priority="1" />
+      <Item value="ArgumentException`0" priority="1" />
+      <Item value="fullNameImagesCollection" priority="0" />
+      <Item value="imageDirs" priority="0" />
+      <Item value="Directory`0" priority="2" />
+      <Item value="Pgm" priority="0" />
+      <Item value="ArgumentException" priority="2" />
+      <Item value="SelectFaceDataBaseViewModel`0" priority="0" />
+      <Item value="FaceImagesDataBases" priority="0" />
+      <Item value="IList" priority="1" />
+      <Item value="fullNameImages" priority="0" />
+      <Item value="MinWidth" priority="0" />
+      <Item value="MinHeight" priority="0" />
+      <Item value="col" priority="0" />
+      <Item value="VARIABLE" priority="0" />
+      <Item value="Horizontal" priority="0" />
+      <Item value="dbDir" priority="1" />
+      <Item value="GetDir`0" priority="0" />
+      <Item value="face" priority="0" />
+      <Item value="NullReferenceException`0" priority="0" />
+      <Item value="static" priority="28" />
+      <Item value="readonly" priority="13" />
+      <Item value="_bitmapSrcImage" priority="0" />
+      <Item value="_coeff" priority="3" />
+      <Item value="_bitmapGrayImage" priority="1" />
+      <Item value="BitmapSource`0" priority="1" />
+      <Item value="null" priority="8" />
+      <Item value="_srcImage" priority="1" />
+      <Item value="else" priority="0" />
+      <Item value="_grayImage" priority="0" />
+      <Item value="XmlWriterTraceListener`0" priority="0" />
+      <Item value="MCvSeqBlock`0" priority="0" />
+      <Item value="MCvSeqReader`0" priority="0" />
+      <Item value="f" priority="1" />
+      <Item value="MCvSeq`0" priority="0" />
+      <Item value="Rectangle`0" priority="1" />
+      <Item value="Rectangle" priority="0" />
+      <Item value="double" priority="20" />
+      <Item value="Exception`0" priority="2" />
+      <Item value="MessageBox`0" priority="0" />
+      <Item value="Constants" priority="0" />
+      <Item value="Constants`0" priority="3" />
+      <Item value="dirFaceDbs" priority="1" />
+      <Item value="path" priority="0" />
+      <Item value="newPath" priority="0" />
+      <Item value="localPath" priority="1" />
+      <Item value="DirectoryInfo`0" priority="1" />
+      <Item value="directoryInfo" priority="1" />
+      <Item value="DirectoryInfo" priority="0" />
+      <Item value="imagePathDir" priority="0" />
+      <Item value="Image" priority="0" />
+      <Item value="Gray`0" priority="0" />
+      <Item value="label" priority="0" />
+      <Item value="propertyName" priority="4" />
+      <Item value="bool" priority="7" />
+      <Item value="value" priority="11" />
+      <Item value="IsStringMissing`0" priority="0" />
+      <Item value="ShortNameFaceImages" priority="1" />
+      <Item value="in" priority="0" />
+      <Item value="shortName" priority="4" />
+      <Item value="PersonId" priority="3" />
+      <Item value="DirFullPath" priority="0" />
+      <Item value="property" priority="1" />
+      <Item value="GetValidationError`0" priority="2" />
+      <Item value="false" priority="6" />
+      <Item value="true" priority="10" />
+      <Item value="class" priority="0" />
+      <Item value="EventArgs`0" priority="1" />
+      <Item value="FaceImageAddedEventArgs`0" priority="2" />
+      <Item value="faceImage" priority="9" />
+      <Item value="FaceImage`0" priority="31" />
+      <Item value="NewFaceImage" priority="0" />
+      <Item value="ViewModel" priority="1" />
+      <Item value="base" priority="1" />
+      <Item value="FullName" priority="2" />
+      <Item value="fullName" priority="2" />
+      <Item value="IEnumerable" priority="4" />
+      <Item value="_faceImages" priority="10" />
+      <Item value="List&lt;FaceImage&gt;" priority="3" />
+      <Item value="IEnumerator" priority="0" />
+      <Item value="FaceImagesEnum`0" priority="1" />
+      <Item value="_pos" priority="4" />
+      <Item value="faceImages" priority="8" />
+      <Item value="try" priority="2" />
+      <Item value="IndexOutOfRangeException`0" priority="2" />
+      <Item value="InvalidOperationException`0" priority="0" />
+      <Item value="Length" priority="1" />
+      <Item value="InvalidOperationException" priority="1" />
+      <Item value="ModelBase`0" priority="0" />
+      <Item value="FaceDataBase`0" priority="12" />
+      <Item value="FaceDataBasesEnum`0" priority="0" />
+      <Item value="ListBindableAttribute`0" priority="2" />
+      <Item value="faceDataBase" priority="4" />
+      <Item value="ArgumentNullException" priority="5" />
+      <Item value="faceDataBases" priority="1" />
+      <Item value="executedDir" priority="0" />
+      <Item value="words" priority="1" />
+      <Item value="faceImageses" priority="1" />
+      <Item value="ShortName" priority="2" />
+      <Item value="dataBasesRepository" priority="0" />
+      <Item value="file" priority="0" />
+      <Item value="GetShortName`0" priority="1" />
+      <Item value="CommandViewModel`0" priority="0" />
+      <Item value="command" priority="1" />
+      <Item value="ICommand`0" priority="0" />
+      <Item value="displayName" priority="0" />
+      <Item value="Command" priority="0" />
+      <Item value="imageDir" priority="0" />
+      <Item value="dataBase" priority="0" />
+      <Item value="OnPropertyChanged`0" priority="3" />
+      <Item value="selectedFaceDb" priority="0" />
+      <Item value="IsMouseOver" priority="0" />
+      <Item value="ToolTip" priority="0" />
+      <Item value="persongId" priority="0" />
+      <Item value="Information" priority="0" />
+      <Item value="FaceDataBasesView`0" priority="2" />
+      <Item value="ResourceDictionary`0" priority="0" />
+      <Item value="DispatcherUnhandledExceptionEventArgs`0" priority="0" />
+      <Item value="UnhandledExceptionEventArgs`0" priority="0" />
+      <Item value="is" priority="1" />
+      <Item value="System" priority="3" />
+      <Item value="MessageBoxImage`0" priority="0" />
+      <Item value="_resource" priority="2" />
+      <Item value="Console`0" priority="1" />
+      <Item value="numBytes" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="GC`0" priority="0" />
+      <Item value="_disposed" priority="1" />
+      <Item value="disposing" priority="0" />
+      <Item value="Stretch" priority="2" />
+      <Item value="FaceRecognition" priority="1" />
+      <Item value="FrToolTip`0" priority="0" />
+      <Item value="DependencyProperty`0" priority="6" />
+      <Item value="FullNameImageProperty" priority="2" />
+      <Item value="typeof" priority="10" />
+      <Item value="BusyControl`0" priority="0" />
+      <Item value="PropertyMetadata" priority="1" />
+      <Item value="GetValue`0" priority="3" />
+      <Item value="SetValue`0" priority="3" />
+      <Item value="BluBusyControl`0" priority="0" />
+      <Item value="object" priority="5" />
+      <Item value="Image`0" priority="1" />
+      <Item value="e" priority="16" />
+      <Item value="as" priority="19" />
+      <Item value="DataObject`0" priority="0" />
+      <Item value="DataObject" priority="0" />
+      <Item value="image" priority="9" />
+      <Item value="data" priority="0" />
+      <Item value="DragDropEffects`0" priority="0" />
+      <Item value="HeightProperty" priority="0" />
+      <Item value="HeightImageProperty" priority="2" />
+      <Item value="WidthImageProperty" priority="1" />
+      <Item value="ImageSource`0" priority="2" />
+      <Item value="Width" priority="1" />
+      <Item value="Height" priority="1" />
+      <Item value="Source" priority="1" />
+      <Item value="Canvas`0" priority="4" />
+      <Item value="imageControl" priority="9" />
+      <Item value="using" priority="2" />
+      <Item value="Windows" priority="0" />
+      <Item value="DragEventArgs`0" priority="0" />
+      <Item value="TestImageCanvas" priority="3" />
+      <Item value="TrainAndTestFaceView`0" priority="1" />
+      <Item value="_topTrainCanvas" priority="3" />
+      <Item value="_topTestCanvas" priority="0" />
+      <Item value="_leftTrainCanvas" priority="2" />
+      <Item value="_leftTestCanvas" priority="0" />
+      <Item value="Thickness" priority="2" />
+      <Item value="Border`0" priority="0" />
+      <Item value="border" priority="10" />
+      <Item value="Brushes`0" priority="1" />
+      <Item value="Background" priority="0" />
+      <Item value="TrainImageCanvas" priority="1" />
+      <Item value="RoutedEvent`0" priority="2" />
+      <Item value="Generic`0" priority="2" />
+      <Item value="MouseLeftButtonDownPlusCtrlEvent" priority="0" />
+      <Item value="EventManager`0" priority="0" />
+      <Item value="Bubble" priority="0" />
+      <Item value="RoutedEventHandler`0" priority="4" />
+      <Item value="event" priority="2" />
+      <Item value="FaceRecognitionAlgorithm`0" priority="2" />
+      <Item value="EigenFaceRecognitionAlgorithm" priority="0" />
+      <Item value="EigenFaceRecognition`0" priority="0" />
+      <Item value="EigenFaceRecognition" priority="0" />
+      <Item value="_eigenFaceAlgoritm" priority="1" />
+      <Item value="_trainImages" priority="5" />
+      <Item value="_testImages" priority="1" />
+      <Item value="_selectedFaceImage" priority="0" />
+      <Item value="selectedIndex" priority="0" />
+      <Item value="IsSealed" priority="0" />
+      <Item value="_isSelected" priority="1" />
+      <Item value="_trainAndTestFaceViewModel" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="alg" priority="1" />
+      <Item value="_name" priority="0" />
+      <Item value="EigenFaceAlgorithm`0" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="trainAndTestFacesView" priority="0" />
+      <Item value="TrainTestGrid" priority="0" />
+      <Item value="*" priority="0" />
+      <Item value="Collections" priority="0" />
+      <Item value="ObjectModel" priority="0" />
+      <Item value="item" priority="3" />
+      <Item value="listView" priority="2" />
+      <Item value="Inumerable" priority="0" />
+      <Item value="PreviewKeyDown" priority="0" />
+      <Item value="KeyEventArgs`0" priority="0" />
+      <Item value="Keys" priority="0" />
+      <Item value="_isDragging" priority="0" />
+      <Item value="MouseButtonEventArgs`0" priority="1" />
+      <Item value="PreviewMouseMove" priority="0" />
+      <Item value="MouseEventArgs`0" priority="0" />
+      <Item value="Vector`0" priority="0" />
+      <Item value="mousePos" priority="0" />
+      <Item value="_startPoint" priority="0" />
+      <Item value="i" priority="5" />
+      <Item value="ListViewItem`0" priority="9" />
+      <Item value="_selectedFaceImages" priority="1" />
+      <Item value="ObservableCollection&lt;FaceImage&gt;" priority="0" />
+      <Item value="_images" priority="0" />
+      <Item value="ImageListView" priority="0" />
+      <Item value="ThemeInfo" priority="0" />
+      <Item value="items" priority="3" />
+      <Item value="ItemCollection`0" priority="0" />
+      <Item value="SelectionChanged" priority="0" />
+      <Item value="ListView`0" priority="3" />
+      <Item value="LogicalTreeHelper`0" priority="0" />
+      <Item value="listViewItem" priority="0" />
+      <Item value="sender" priority="0" />
+      <Item value="WrapPanel`0" priority="0" />
+      <Item value="ScrollViewer`0" priority="0" />
+      <Item value="DragEnter" priority="0" />
+      <Item value="PreviewMouseLeftButtonUp" priority="0" />
+      <Item value="VisualTreeHelper`0" priority="0" />
+      <Item value="current" priority="6" />
+      <Item value="ProgressBar" priority="0" />
+      <Item value="PieProgressBar`0" priority="0" />
+      <Item value="values" priority="5" />
+      <Item value="maximum" priority="1" />
+      <Item value="minimum" priority="1" />
+      <Item value="NotSupportedException" priority="0" />
+      <Item value="Math`0" priority="2" />
+      <Item value="x" priority="0" />
+      <Item value="NotSupportedException`0" priority="0" />
+      <Item value="RelativeSource`0" priority="0" />
+      <Item value="IsEnabled" priority="0" />
+      <Item value="IsIndeterminate" priority="0" />
+      <Item value="Properties" priority="0" />
+      <Item value="const" priority="0" />
+      <Item value="faceDetect" priority="1" />
+      <Item value="FaceDetect" priority="0" />
+      <Item value="FdFaceDetection`0" priority="0" />
+      <Item value="_scaleFactor" priority="0" />
+      <Item value="_scale" priority="0" />
+      <Item value="_path" priority="2" />
+      <Item value="BitmapConverter`0" priority="0" />
+      <Item value="img" priority="1" />
+      <Item value="Bitmap`0" priority="0" />
+      <Item value="_face" priority="3" />
+      <Item value="Path" priority="0" />
+      <Item value="FileStorageMode`0" priority="0" />
+      <Item value="IO" priority="0" />
+      <Item value="Path`0" priority="0" />
+      <Item value="File`0" priority="0" />
+      <Item value="r" priority="0" />
+      <Item value="FaceDetection" priority="1" />
+      <Item value="FaceDetectionViewModel`0" priority="2" />
+      <Item value="ScaleProperty" priority="1" />
+      <Item value="Scale" priority="0" />
+      <Item value="EventHandler" priority="0" />
+      <Item value="FaceAddedEventArgs`0" priority="0" />
+      <Item value="extension" priority="0" />
+      <Item value="break" priority="0" />
+      <Item value="_selTrainTestImagesWindow" priority="0" />
+      <Item value="WindowStartupLocation" priority="0" />
+      <Item value="CenterScreen" priority="3" />
+      <Item value="GoPreprocBtn" priority="0" />
+      <Item value="TrainAndTestViewReadyEventArgs`0" priority="1" />
+      <Item value="IsReady" priority="0" />
+      <Item value="isReady" priority="0" />
+      <Item value="RoutedEventHandler" priority="0" />
+      <Item value="TrainAndTestReadyEvent" priority="0" />
+      <Item value="_isTestViewReady" priority="0" />
+      <Item value="delegate" priority="0" />
+      <Item value="TrainTestViewPropertiesChangesEventHandler`0" priority="1" />
+      <Item value="TrainTestViewPropertiesChanged" priority="0" />
+      <Item value="trainTestViewPropertiesChanged" priority="0" />
+      <Item value="propertiesChangesEventHandler" priority="2" />
+      <Item value="FaceDetectionWindow`0" priority="0" />
+      <Item value="FaceDetectionWindow" priority="0" />
+      <Item value="_faceDectionWindow" priority="0" />
+      <Item value="RenderSize" priority="0" />
+      <Item value="Normal" priority="0" />
+      <Item value="selItem" priority="1" />
+      <Item value="for" priority="0" />
+      <Item value="_listView" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.TrainAndFaceRecognize.TrainAndFaceRecognizeWindow">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.View.UserControls.BusyControl">
+      <Item value="Visibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Visibility">
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.DataAccess.FaceImagesRepository">
+      <Item value="ImageNames" priority="0" />
+      <Item value="GetFullNameImages`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.DataAccess.FaceDataBasesRepository">
+      <Item value="DbPathCollection" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.ResourceDictionary">
+      <Item value="Indexer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.Model.FaceDataBases">
+      <Item value="GetDbNames`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Select`2" priority="0" />
+      <Item value="SelectMany`3" priority="0" />
+      <Item value="ToArray`0" priority="1" />
+      <Item value="Count" priority="2" />
+      <Item value="AddRange`0" priority="4" />
+      <Item value="Add`0" priority="5" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="Contains`0" priority="3" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
+      <Item value="Add`0" priority="10" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="Remove`0" priority="2" />
+      <Item value="Count" priority="0" />
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.View.BusyControlView">
+      <Item value="DataContext" priority="0" />
+      <Item value="HorizontalAlignment" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.View.DbListControlView">
+      <Item value="DataContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.WrapPanel">
+      <Item value="BindingGroup" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="3" />
+      <Item value="IsNullOrWhiteSpace`0" priority="0" />
+      <Item value="Empty" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="EnumerateFiles`0" priority="0" />
+      <Item value="CreateDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenfacesFaceRecognition.Model.FaceImagesDataBases">
+      <Item value="GetFaceDataBaseNames`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="0" />
+      <Item value="Substring`0" priority="0" />
+      <Item value="Length" priority="0" />
+      <Item value="Trim`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PriorProcessingFaceImage.FaceImageProcessing">
+      <Item value="GrayImageWithIcreaseContrast" priority="0" />
+      <Item value="Coeff" priority="0" />
+      <Item value="GetBitmapSourceWithDetectFace`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@PriorProcessingImage.Constants">
+      <Item value="FaceCascadeFileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Emgu.CV.Image`2">
+      <Item value="NumberOfChannels" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Emgu.CV.Structure.MCvSeq">
+      <Item value="total" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Emgu.CV.Structure.MCvAvgComp">
+      <Item value="rect" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EigenfacesFaceRecognition.Constants">
+      <Item value="FaceImagesAfterPriorProcessingFolderName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileInfo">
+      <Item value="Directory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.DirectoryInfo">
+      <Item value="FullName" priority="0" />
+      <Item value="Exists" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@PriorProcessingFaceImage.Constants">
+      <Item value="FaceCascadeFileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FaceRecognition.Constants">
+      <Item value="FACE_IMAGES_AFTER_PRIOR_PROCESSING_FOLDER_NAME" priority="1" />
+      <Item value="FACE_IMAGES_DATABASE_FOLDER_NAME" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Primitives.UniformGrid">
+      <Item value="Columns" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FaceRecognition.Properties.Strings">
+      <Item value="Face_Images_After_Prior_Processing_Folder_Name" priority="2" />
+      <Item value="Face_Images_Database_Folder_Name" priority="1" />
+      <Item value="SelectionFaceRecognitionAlgorithms" priority="0" />
+      <Item value="SelectionTrainAndTestImages_Title" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.Properties.Strings">
+      <Item value="Busy_Control_Image_Path" priority="1" />
+      <Item value="ResourceManager" priority="0" />
+      <Item value="FaceDetectionWindow_Title" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.Model.FaceImages">
+      <Item value="AddRange`0" priority="1" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.Model.FaceDataBases">
+      <Item value="Add`0" priority="0" />
+      <Item value="GetEnumerator`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.Model.FaceDataBase">
+      <Item value="FullName" priority="0" />
+      <Item value="Add`0" priority="1" />
+      <Item value="ShortName" priority="0" />
+      <Item value="FaceImages" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.ViewModel.ViewModelBase">
+      <Item value="DisplayName" priority="0" />
+      <Item value="TrainTestViewPropertiesChanged" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.DataAccess.FaceDataBasesRepository">
+      <Item value="FaceDataBases" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.Model.FaceImage">
+      <Item value="FullName" priority="3" />
+      <Item value="ShortName" priority="0" />
+      <Item value="PersonId" priority="0" />
+      <Item value="Information" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Style">
+      <Item value="Triggers" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ListView">
+      <Item value="DataContext" priority="0" />
+      <Item value="MouseLeftButtonDown" priority="0" />
+      <Item value="SelectedIndex" priority="1" />
+      <Item value="SelectionChanged" priority="3" />
+      <Item value="SelectionMode" priority="0" />
+      <Item value="Items" priority="5" />
+      <Item value="ItemsSource" priority="3" />
+      <Item value="SelectedItems" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Application">
+      <Item value="Current" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Application">
+      <Item value="DispatcherUnhandledException" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs">
+      <Item value="Dispatcher" priority="0" />
+      <Item value="Exception" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.Dispatcher">
+      <Item value="UnhandledException" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.UnhandledExceptionEventArgs">
+      <Item value="ExceptionObject" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Length" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.GC">
+      <Item value="SuppressFinalize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomToolTip.FrToolTip">
+      <Item value="Title" priority="0" />
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.DependencyProperty">
+      <Item value="Register`0" priority="2" />
+      <Item value="UnsetValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BusyControl.BusyControl">
+      <Item value="DataContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.TemplateBindingExtension">
+      <Item value="Height" priority="0" />
+      <Item value="Foreground" priority="0" />
+      <Item value="Background" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.MouseButtonEventArgs">
+      <Item value="Source" priority="2" />
+      <Item value="GetPosition`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Image">
+      <Item value="Source" priority="0" />
+      <Item value="Margin" priority="0" />
+      <Item value="Width" priority="2" />
+      <Item value="Height" priority="0" />
+      <Item value="Parent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.DragDrop">
+      <Item value="DoDragDrop`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.DragDropEffects">
+      <Item value="Copy" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.DragEventArgs">
+      <Item value="Data" priority="1" />
+      <Item value="GetPosition`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.IDataObject">
+      <Item value="GetData`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Media.ImageSource">
+      <Item value="Width" priority="1" />
+      <Item value="HasAnimatedProperties" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Controls.Canvas">
+      <Item value="SetLeft`0" priority="1" />
+      <Item value="SetTop`0" priority="0" />
+      <Item value="GetRight`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.View.TrainAndTestFaceView">
+      <Item value="TrainImageCanvas" priority="2" />
+      <Item value="Width" priority="1" />
+      <Item value="_isTestImageSelected" priority="0" />
+      <Item value="MaxWidth" priority="0" />
+      <Item value="ActualWidth" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Point">
+      <Item value="X" priority="1" />
+      <Item value="Y" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Canvas">
+      <Item value="Children" priority="1" />
+      <Item value="HorizontalAlignment" priority="0" />
+      <Item value="VerticalAlignment" priority="0" />
+      <Item value="RenderSize" priority="1" />
+      <Item value="DesiredSize" priority="0" />
+      <Item value="ActualWidth" priority="0" />
+      <Item value="Width" priority="3" />
+      <Item value="ScrollViewer`0" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.UIElementCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Border">
+      <Item value="BorderBrush" priority="0" />
+      <Item value="BorderThickness" priority="1" />
+      <Item value="Child" priority="1" />
+      <Item value="RenderSize" priority="2" />
+      <Item value="Background" priority="0" />
+      <Item value="Margin" priority="1" />
+      <Item value="MaxWidth" priority="0" />
+      <Item value="Width" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Media.Brushes">
+      <Item value="Black" priority="0" />
+      <Item value="Blue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Size">
+      <Item value="Height" priority="0" />
+      <Item value="Width" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Thickness">
+      <Item value="Top" priority="1" />
+      <Item value="Left" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FaceRecognition.View.TrainAndTestFaceView">
+      <Item value="ActualWidthProperty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.EventManager">
+      <Item value="RegisterRoutedEvent`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EigenFaceRecognitionAlgorithm.EigenFaceRecognition">
+      <Item value="Train`0" priority="0" />
+      <Item value="Recognize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.SelectionChangedEventArgs">
+      <Item value="Source" priority="0" />
+      <Item value="AddedItems" priority="2" />
+      <Item value="RemovedItems" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.ViewModel.TrainAndTestFaceViewModel">
+      <Item value="FaceImages" priority="0" />
+      <Item value="TrainImages" priority="0" />
+      <Item value="TestImages" priority="1" />
+      <Item value="SelectDb`0" priority="0" />
+      <Item value="OnPropertyChanged`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FaceRecognition.DataAccess.FaceDataBasesRepository">
+      <Item value="TrainImages" priority="7" />
+      <Item value="TestImages" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.RecognitionAlgorithms.FaceRecognitionAlgorithm">
+      <Item value="Train`0" priority="0" />
+      <Item value="Recognize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ColumnDefinition">
+      <Item value="Width" priority="0" />
+      <Item value="ActualWidth" priority="0" />
+      <Item value="MaxWidth" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Grid">
+      <Item value="Width" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ItemCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="Count" priority="1" />
+      <Item value="GetItemAt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ListViewItem">
+      <Item value="Parent" priority="1" />
+      <Item value="IsSelected" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.KeyEventArgs">
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Input.Key">
+      <Item value="Escape" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.MouseEventArgs">
+      <Item value="GetPosition`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.LogicalTreeHelper">
+      <Item value="GetParent`0" priority="0" />
+      <Item value="FindLogicalNode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ControlTemplate">
+      <Item value="Resources" priority="0" />
+      <Item value="VisualTree" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="PI" priority="0" />
+      <Item value="Cos`0" priority="0" />
+      <Item value="Sin`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Media.ArcSegment">
+      <Item value="IsLargeArc" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="JetBrains.ReSharper.Feature.Services.Xaml.CodeCompletion.XamlBasicCompletionContext">
+      <Item value="ctx" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FaceDetection.Constants">
+      <Item value="FaceCascadeFileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceDetection.FdFaceDetection">
+      <Item value="FaceDetect`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@OpenCvSharp.LoadMode">
+      <Item value="GrayScale" priority="1" />
+      <Item value="Color" priority="0" />
+      <Item value="AnyColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@OpenCvSharp.BitmapConverter">
+      <Item value="ToBitmap`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Exists`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:OpenCvSharp.IplImage">
+      <Item value="ROI" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FaceImageDbRepository.Constants">
+      <Item value="ValidExtensions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.Windows.TrainAndTestImagesWindow">
+      <Item value="Owner" priority="0" />
+      <Item value="Close`0" priority="0" />
+      <Item value="Visibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Button">
+      <Item value="IsEnabled" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.CustomEventArgs.TrainAndTestViewReadyEventArgs">
+      <Item value="IsReady" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FaceRecognition.ViewModel.TrainAndTestFaceViewModel">
+      <Item value="TrainTestViewPropertiesChanged" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FaceRecognition.Windows.FaceDetectionWindow">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.IList">
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EF1CDB5-B66E-4A7C-9432-E531A1FD34EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FaceRecognition.Test</RootNamespace>
+    <AssemblyName>FaceRecognition.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="alglibnet2">
+      <HintPath>..\libs\alglibnet2.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\libs\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML">
+      <HintPath>..\libs\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\libs\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>..\libs\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppTest.cs" />
+    <Compile Include="BackPropagationOneLayerTest.cs" />
+    <Compile Include="BackPropagationThreeLayersTest.cs" />
+    <Compile Include="BackPropagationTwoLayersTest.cs" />
+    <Compile Include="ConstantsTest.cs" />
+    <Compile Include="ControlReadyEventArgsTest.cs" />
+    <Compile Include="d__diplomprojects_diplomproject_facerecognition_styles_borderstyle_xamlTest.cs" />
+    <Compile Include="d__diplomprojects_diplomproject_facerecognition_styles_gridsplitterstyle_xamlTest.cs" />
+    <Compile Include="d__diplomprojects_diplomproject_facerecognition_styles_itemcontstyle_xamlTest.cs" />
+    <Compile Include="d__diplomprojects_diplomproject_facerecognition_styles_textblockstyle_xamlTest.cs" />
+    <Compile Include="EigenFaceControlTest.cs" />
+    <Compile Include="EigenFaceMethodTest.cs" />
+    <Compile Include="EigenFaceViewModelTest.cs" />
+    <Compile Include="ExcelExporterTest.cs" />
+    <Compile Include="ExtractFeaturesTest.cs" />
+    <Compile Include="IBackPropagationTest.cs" />
+    <Compile Include="IRecognitionMethodTest.cs" />
+    <Compile Include="MainWindowTest.cs" />
+    <Compile Include="NeuralEventArgsTest.cs" />
+    <Compile Include="NeuralNetworksControlTest.cs" />
+    <Compile Include="NeuralNetworksViewModelTest.cs" />
+    <Compile Include="NeuralNetworkTest.cs" />
+    <Compile Include="NumberTrainTestFacesEventArgsTest.cs" />
+    <Compile Include="PreprocessingPanelControlTest.cs" />
+    <Compile Include="PreprocessingPanelViewModelTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeTest.cs" />
+    <Compile Include="RecognitionMethodBaseTest.cs" />
+    <Compile Include="RecognitionMethodModelTest.cs" />
+    <Compile Include="RecognitionMethodsEnumTest.cs" />
+    <Compile Include="RecognitionMethodsRepositoryTest.cs" />
+    <Compile Include="RecognizeClassControlTest.cs" />
+    <Compile Include="RecognizeClassViewModelTest.cs" />
+    <Compile Include="RecognizeEventArgsTest.cs" />
+    <Compile Include="RecognizeMethodControlBaseTest.cs" />
+    <Compile Include="RecognizeMethodEventArgsTest.cs" />
+    <Compile Include="RecognizeMethodsViewModelBaseTest.cs" />
+    <Compile Include="RecognizePanelControlTest.cs" />
+    <Compile Include="RecognizePanelViewModelTest.cs" />
+    <Compile Include="ResultsFaceRecognitionControlTest.cs" />
+    <Compile Include="ResultsFaceRecognitionViewModelTest.cs" />
+    <Compile Include="SelectedFaceDbEventArgsTest.cs" />
+    <Compile Include="SelectionDataBaseControlTest.cs" />
+    <Compile Include="SelectionDataBaseViewModelTest.cs" />
+    <Compile Include="SelectionRecognitionMethodControlTest.cs" />
+    <Compile Include="SelectionRecognitionMethodViewModelTest.cs" />
+    <Compile Include="SelectionTrainTestImagesControlTest.cs" />
+    <Compile Include="SelectionTrainTestImagesViewModelTest.cs" />
+    <Compile Include="SettingsTest.cs" />
+    <Compile Include="SheetsTest.cs" />
+    <Compile Include="StringsTest.cs" />
+    <Compile Include="TrainSuccessEventArgsTest.cs" />
+    <Compile Include="ViewModelBaseTest.cs" />
+    <Compile Include="WorkbooksTest.cs" />
+    <Compile Include="_ApplicationTest.cs" />
+    <Compile Include="_WorkbookTest.cs" />
+    <Compile Include="_WorksheetTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Test References\FaceRecognition.accessor" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusyControl\BusyControl.csproj">
+      <Project>{872FC232-D903-4FD3-A40F-EFA9AB9BD014}</Project>
+      <Name>BusyControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FaceDetection\FaceDetection.csproj">
+      <Project>{E5A61414-1D09-4BB2-84D6-DFDE2399D911}</Project>
+      <Name>FaceDetection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FaceImagesModel\FaceImagesModel.csproj">
+      <Project>{7CC00F9A-6843-4E5A-A8D8-1909BF1E8F69}</Project>
+      <Name>FaceImagesModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ImageView\ImageView.csproj">
+      <Project>{BFBB843B-EDF3-4AE5-AAFF-F7C0DC235F28}</Project>
+      <Name>ImageView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\Utility.csproj">
+      <Project>{61483CC1-C186-4E26-BE26-0E666F84712D}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceImagesDataAccess\FaceImagesDataAccess.csproj">
+      <Project>{00955A53-B146-427B-8F0C-065FF05EAAFF}</Project>
+      <Name>FaceImagesDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceRecognition.csproj">
+      <Project>{C971BD0E-994B-401A-A1B8-72E5E49DACAA}</Project>
+      <Name>FaceRecognition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

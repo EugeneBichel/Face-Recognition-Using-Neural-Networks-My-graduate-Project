@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="FaceRecognition.Styles.d__diplomprojects_diplomproject_facerecognition_styles_gridsplitterstyle_xaml">
+    <Style x:Key="HorGridSplitterStyle" TargetType="{x:Type GridSplitter}">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Height" Value="5"/>
+        <Setter Property="Background" Value="Gray"/>
+    </Style>
+    <Style x:Key="VerGridSplitterStyle" TargetType="{x:Type GridSplitter}">
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="5"/>
+        <Setter Property="Background" Value="LightGray"/>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="FaceRecognition.Controls.ResultsFaceRecognitionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0">
+            <GroupBox Header="Input Parameters:">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0"
+                               x:Name="NumTrainFacesTextBlock"
+                               Text="Train Faces: "
+                               Style="{StaticResource TextBlockStyle}"/>
+                    <TextBox Grid.Row="0" Grid.Column="1"
+                               x:Name="NumTrainFacesTextBox"
+                               Text="{Binding NumberTrainFaces}"
+                               Style="{StaticResource TextBoxStyle}"/>
+                    <TextBlock Grid.Row="1" Grid.Column="0"
+                               x:Name="NumTestFacesTextBlock"
+                               Text="Test Faces: "
+                               Style="{StaticResource TextBlockStyle}"/>
+                    <TextBox Grid.Row="1" Grid.Column="1"
+                               x:Name="NumTestFacesTextBox"
+                               Text="{Binding NumberTestFaces}"
+                               Style="{StaticResource TextBoxStyle}"/>
+                </Grid>
+            </GroupBox>
+        </Border>
+        <Border Grid.Row="1" Style="{StaticResource BorderStyle}">
+            <Grid>
+                
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

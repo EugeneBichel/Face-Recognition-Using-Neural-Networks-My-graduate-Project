@@ -1,0 +1,130 @@
+﻿<controlsBase:RecognizeMethodControlBase x:Class="FaceRecognition.Controls.RecognizeMehodsControls.NeuralNetworksControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controlsBase="clr-namespace:FaceRecognition.Controls.RecognizeMehodsControls">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.ColumnSpan="4" Style="{StaticResource BorderStyle}">
+            <GroupBox Header="Settings" Padding="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Style="{StaticResource BorderStyle}">
+                        <GroupBox Header="Network Properties">
+                            <Grid Margin="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" 
+                                           x:Name="NumLayersTextBlock" 
+                                           Text="Number Of Layers: " 
+                                           Style="{StaticResource TextBlockStyle}"
+                                           HorizontalAlignment="Left"/>
+                                <TextBlock Grid.Row="0" Grid.Column="1" 
+                                          x:Name="LayerTextBlock" 
+                                           Text="{Binding SelectedLayer}" 
+                                           Style="{StaticResource TextBlockStyle}"
+                                           HorizontalAlignment="Left"/>
+                                <TextBlock Grid.Row="0" Grid.Column="2" 
+                                           x:Name="MaxErrorTextBlock" 
+                                           Text="Maximum Error: " 
+                                           Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Right" />
+                                <TextBlock Grid.Row="0" Grid.Column="3" 
+                                         x:Name="MaxErrorValue"
+                                         Text="{Binding MaxError}"
+                                         Style="{StaticResource TextBlockStyle}"
+                                         HorizontalAlignment="Stretch" Height="25" Margin="5" />
+                            </Grid>
+                        </GroupBox>
+                    </Border>
+                </Grid>
+            </GroupBox>
+        </Border>
+        <Border Grid.Row="1" Grid.ColumnSpan="4" Style="{StaticResource BorderStyle}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" 
+                           x:Name="TimeTextBlock" 
+                           Text="Train time:" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" 
+                         x:Name="TimeValue" 
+                         Text="{Binding TrainTimeValue}" 
+                         Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" 
+                           x:Name="StateTextBlock" 
+                           Text="State:" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="0" Grid.Column="3" 
+                         x:Name="StateValue" 
+                         Text="{Binding TrainStatus}" 
+                         Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="1" 
+                            Grid.Column="0" 
+                            Text="Recognize time: "
+                            Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="1"
+                                Grid.Column="1" 
+                                x:Name="RecTimeValue"
+                                Text="{Binding RecognizeTimeValue}" 
+                                Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" 
+                           x:Name="ErrorTextBlock" 
+                           Text="Error:" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" 
+                           x:Name="ErrorValue" 
+                           Text="{Binding Error}" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="2" Grid.Column="2" 
+                           x:Name="IterationsTextBlock" 
+                           Text="Iterations:" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Row="2" Grid.Column="3" 
+                           x:Name="IterationsValue" 
+                           Text="{Binding Iterations}" 
+                           Style="{StaticResource TextBlockStyle}"/>
+            </Grid>
+        </Border>
+        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                x:Name="TrainButton" 
+                Content="Train Network" 
+                Style="{StaticResource ButtonStyle}" 
+                Width="100"
+                Click="TrainButton_Click"/>
+        <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" 
+                x:Name="RecognizeButton" 
+                Content="Recognize" 
+                Style="{StaticResource ButtonStyle}"
+                Width="100"
+                Click="RecognizeButton_Click"/>
+    </Grid>
+</controlsBase:RecognizeMethodControlBase>

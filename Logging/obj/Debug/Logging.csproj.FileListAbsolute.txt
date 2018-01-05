@@ -1,0 +1,12 @@
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Logging.dll
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Logging.pdb
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Microsoft.Practices.Unity.dll
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Microsoft.Practices.Unity.pdb
+D:\DiplomProjects\DiplomProject\Logging\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+D:\DiplomProjects\DiplomProject\Logging\obj\Debug\ResolveAssemblyReference.cache
+D:\DiplomProjects\DiplomProject\Logging\obj\Debug\Logging.dll
+D:\DiplomProjects\DiplomProject\Logging\obj\Debug\Logging.pdb

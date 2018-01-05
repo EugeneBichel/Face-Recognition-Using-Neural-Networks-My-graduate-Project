@@ -1,0 +1,86 @@
+﻿<controlsBase:RecognizeMethodControlBase x:Class="FaceRecognition.Controls.RecognizeMehodsControls.EigenFaceControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controlsBase="clr-namespace:FaceRecognition.Controls.RecognizeMehodsControls">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Style="{StaticResource BorderStyle}">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="trainButton" 
+                        Content="Train" 
+                        Style="{StaticResource ButtonStyle}"
+                        Margin="5,5,20,5" Padding="20,5,20,5"
+                        Click="trainButton_Click"/>
+                <Button x:Name="reproduceButton"
+                        Content="Recognize"
+                        Style="{StaticResource ResourceKey=ButtonStyle}"
+                        Margin="5,5,20,5" Padding="20,5,20,5"
+                        Click="reproduceButton_Click"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" Style="{StaticResource BorderStyle}">
+            <StackPanel Orientation="Horizontal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" 
+                            Grid.Column="0" 
+                            Text="Train time: "
+                            Style="{StaticResource TextBlockStyle}"/>
+                    <TextBlock Grid.Row="0"
+                                Grid.Column="1" 
+                                x:Name="TrainTimeValue"
+                                Text="{Binding TrainTimeValue}" 
+                                Style="{StaticResource TextBlockStyle}"/>
+                    <TextBlock Grid.Row="0" 
+                            Grid.Column="2" 
+                            Text="s"
+                            Style="{StaticResource TextBlockStyle}"/>
+                    <TextBlock Grid.Row="0" 
+                            Grid.Column="4" 
+                            Text="State: "
+                            Style="{StaticResource TextBlockStyle}"/>
+                    <TextBlock Grid.Row="0"
+                                Grid.Column="5" 
+                                x:Name="trainResTextBlock"
+                                Text="{Binding TrainStatus}" 
+                                Style="{StaticResource TextBlockStyle}"/>
+                    <TextBlock Grid.Row="1" 
+                            Grid.Column="0" 
+                            Text="Recognize time: "
+                            Style="{StaticResource TextBlockStyle}"/>
+                    <TextBlock Grid.Row="1"
+                                Grid.Column="1" 
+                                x:Name="RecTimeValue"
+                                Text="{Binding RecognizeTimeValue}" 
+                                Style="{StaticResource TextBlockStyle}"/>
+                    <TextBlock Grid.Row="1" 
+                            Grid.Column="2" 
+                            Text="s"
+                            Style="{StaticResource TextBlockStyle}"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="2" Style="{StaticResource BorderStyle}">
+            <StackPanel x:Name="resStackPanel">
+            </StackPanel>
+        </Border>
+    </Grid>
+</controlsBase:RecognizeMethodControlBase>

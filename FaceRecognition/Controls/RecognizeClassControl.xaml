@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="FaceRecognition.Controls.RecognizeClassControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:imageView="clr-namespace:ImageView;assembly=ImageView">
+    <StackPanel Orientation="Vertical" Margin="5">
+        <Border Style="{StaticResource ResourceKey=BorderStyle}">
+            <GroupBox Header="Test Image">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" 
+                            Style="{StaticResource ResourceKey=BorderStyle}" HorizontalAlignment="Left">
+                        <Image Source="{Binding TestFace.FullName}" Width="60" Height="80"/>
+                    </Border>
+                    <TextBlock Grid.Row="0" Grid.Column="1" 
+                               Text="Class: " 
+                               Style="{StaticResource TextBlockStyle}"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="0" Grid.Column="2" 
+                               Text="{Binding TestFace.PersonId}" 
+                               Style="{StaticResource TextBlockStyle}"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" 
+                               Text="Face: " 
+                               Style="{StaticResource TextBlockStyle}"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" 
+                               Text="{Binding TestFace.ShortName}" 
+                               Style="{StaticResource TextBlockStyle}"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="2" Grid.Column="1" 
+                               Text="Is Recognized: " 
+                               Style="{StaticResource TextBlockStyle}"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="2" Grid.Column="2" 
+                               Text="{Binding IsRecognized}" 
+                               Style="{StaticResource TextBlockStyle}"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"/>
+                </Grid>
+            </GroupBox>
+        </Border>
+        <Border Style="{StaticResource ResourceKey=BorderStyle}">
+            <GroupBox Header="Recognized Class">
+                <Grid Grid.Row="0" x:Name="ImageGridAfterPreprocessing">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                        Style="{StaticResource BorderStyle}">
+                        <TextBlock x:Name="RecognizedTxtBlock" 
+                                   Text="Recognized Images Class:"
+                                   Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+                    </Border>
+                    <Border Grid.Row="1"
+                            Style="{StaticResource BorderStyle}"
+                            ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ListView x:Name="RecognizedFacesListView"
+                                  ItemsSource="{Binding RecognizedFaces}"
+                                  Height="150" HorizontalAlignment="Stretch">
+                            <ListView.View>
+                                <imageView:CustomImageView ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                            </ListView.View>
+                        </ListView>
+                    </Border>
+                </Grid>
+            </GroupBox>
+        </Border>
+    </StackPanel>
+</UserControl>

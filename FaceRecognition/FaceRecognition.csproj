@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C971BD0E-994B-401A-A1B8-72E5E49DACAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FaceRecognition</RootNamespace>
+    <AssemblyName>FaceRecognition</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\FaceRecognition.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="alglibnet2">
+      <HintPath>libs\alglibnet2.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML">
+      <HintPath>libs\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>libs\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controls\ResultsFaceRecognitionControl.xaml.cs">
+      <DependentUpon>ResultsFaceRecognitionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecognizeMehodsControls\RecognizeMethodControlBase.cs" />
+    <Compile Include="Controls\RecognizeMehodsControls\EigenFaceControl.xaml.cs">
+      <DependentUpon>EigenFaceControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecognizeMehodsControls\NeuralNetworksControl.xaml.cs">
+      <DependentUpon>NeuralNetworksControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PreprocessingPanelControl.xaml.cs">
+      <DependentUpon>PreprocessingPanelControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecognizeClassControl.xaml.cs">
+      <DependentUpon>RecognizeClassControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectionDataBaseControl.xaml.cs">
+      <DependentUpon>SelectionDataBaseControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectionRecognitionMethodControl.xaml.cs">
+      <DependentUpon>SelectionRecognitionMethodControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectionTrainTestImagesControl.xaml.cs">
+      <DependentUpon>SelectionTrainTestImagesControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Export\ExcelExporter.cs" />
+    <Compile Include="RecognitionMethods\MethodModel\RecognitionMethodModel.cs" />
+    <Compile Include="RecognitionMethods\MethodModel\RecognitionMethods.cs" />
+    <Compile Include="RecognitionMethods\MethodModel\RecognitionMethodsEnum.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\NeuralEventArgs.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\Structs\FirstHiddenNeuron.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\Structs\InputNeuron.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\Structs\OutputNeuron.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\Structs\SecondHiddenNeuron.cs" />
+    <Compile Include="ViewModel\CustomEventArgs\NumberTrainTestFacesEventArgs.cs" />
+    <Compile Include="ViewModel\CustomEventArgs\RecognizeEventArgs.cs" />
+    <Compile Include="ViewModel\CustomEventArgs\RecognizeMethodEventArgs.cs" />
+    <Compile Include="ViewModel\CustomEventArgs\ControlReadyEventArgs.cs" />
+    <Compile Include="ViewModel\CustomEventArgs\SelectedFaceDbEventArgs.cs" />
+    <Compile Include="ViewModel\CustomEventArgs\TrainSuccessEventArgs.cs" />
+    <Compile Include="RecognitionMethods\IRecognitionMethod.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\BackPropagationOneLayer.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\BackPropagationTwoLayers.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\BackPropagationThreeLayers.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\IBackPropagation.cs" />
+    <Compile Include="RecognitionMethods\NeuralNetworks\BackPropagation\NeuralNetwork.cs" />
+    <Compile Include="ViewModel\PreprocessingPanelViewModel.cs" />
+    <Compile Include="ViewModel\RecognitionMethodsViewModel\EigenFaceViewModel.cs" />
+    <Compile Include="ViewModel\RecognitionMethodsViewModel\NeuralNetworksViewModel.cs" />
+    <Compile Include="ViewModel\RecognitionMethodsViewModel\RecognizeMethodsViewModelBase.cs" />
+    <Compile Include="ViewModel\RecognizeClassViewModel.cs" />
+    <Compile Include="RecognitionMethods\EigenFaceMethod.cs" />
+    <Compile Include="RecognitionMethods\RecognitionMethodBase.cs" />
+    <Compile Include="RecognitionMethods\RecognitionMethodsRepository.cs" />
+    <Page Include="Controls\ResultsFaceRecognitionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RecognizeMehodsControls\EigenFaceControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RecognizeMehodsControls\NeuralNetworksControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PreprocessingPanelControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RecognizeClassControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SelectionDataBaseControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SelectionRecognitionMethodControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SelectionTrainTestImagesControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ToolBarButtonBaseStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\BorderStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="RecognitionMethods\NeuralNetworks\ExtractFeatures.cs" />
+    <Compile Include="ViewModel\RecognizePanelViewModel.cs" />
+    <Compile Include="ViewModel\ResultsFaceRecognitionViewModel.cs" />
+    <Compile Include="ViewModel\SelectionDataBaseViewModel.cs" />
+    <Compile Include="ViewModel\SelectionRecognitionMethodViewModel.cs" />
+    <Compile Include="ViewModel\SelectionTrainTestImagesViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Controls\RecognizePanelControl.xaml.cs">
+      <DependentUpon>RecognizePanelControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Styles\GridSplitterStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ItemContStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlockStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Controls\RecognizePanelControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\WindowStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Database.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusyControl\BusyControl.csproj">
+      <Project>{872FC232-D903-4FD3-A40F-EFA9AB9BD014}</Project>
+      <Name>BusyControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceDetection\FaceDetection.csproj">
+      <Project>{E5A61414-1D09-4BB2-84D6-DFDE2399D911}</Project>
+      <Name>FaceDetection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FaceImagesModel\FaceImagesModel.csproj">
+      <Project>{7CC00F9A-6843-4E5A-A8D8-1909BF1E8F69}</Project>
+      <Name>FaceImagesModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageView\ImageView.csproj">
+      <Project>{BFBB843B-EDF3-4AE5-AAFF-F7C0DC235F28}</Project>
+      <Name>ImageView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{61483CC1-C186-4E26-BE26-0E666F84712D}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="FaceImagesDataAccess\FaceImagesDataAccess.csproj">
+      <Project>{00955A53-B146-427B-8F0C-065FF05EAAFF}</Project>
+      <Name>FaceImagesDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FaceRecognition.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\mozilla_blu.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="FaceRecognition.Controls.FaceDetectionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:iv="clr-namespace:ImageView;assembly=ImageView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <!--<RowDefinition/>
+            <RowDefinition Height="Auto"/>-->
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--<Grid Grid.Row="0" x:Name="ImageGridBeforePreprocessing">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Grid.Column="0"
+                    Style="{StaticResource BorderStyle}">
+                <TextBlock x:Name="TrainFacesTxtBlock" 
+                               Text="Face Images For Train Face Recognition Algorithm Before Preprocessing Step"
+                               Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+            </Border>
+            <Border Grid.Row="1"
+                    Grid.Column="0"
+                    Style="{StaticResource BorderStyle}"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <ListView x:Name="TrainImageBeforePreprocListView"
+                          ItemsSource="{Binding TrainImages}">
+                    <ListView.View>
+                        <iv:CustomImageView ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                    </ListView.View>
+                </ListView>
+            </Border>
+            <GridSplitter Grid.RowSpan="2" Grid.Column="1" Width="5" 
+                          Style="{StaticResource ResourceKey=VerGridSplitterStyle}"/>
+            <Border Grid.Row="0" Grid.Column="2"
+                    Style="{StaticResource BorderStyle}">
+                <TextBlock x:Name="TestFacesBeforePreprocTxtBlock" 
+                           Text="Face Images For Test Face Recognition Algorithm Before Preprocessing Step"
+                           Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+            </Border>
+            <Border Grid.Row="1"
+                    Grid.Column="2"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    Style="{StaticResource BorderStyle}">
+                <Grid>
+                    <ListView x:Name="TestImageBeforePreprocListView"
+                              ItemsSource="{Binding TestImages}">
+                        <ListView.View>
+                            <iv:CustomImageView ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </Border>
+        </Grid>
+        <GridSplitter Grid.Row="1" Style="{StaticResource ResourceKey=HorGridSplitterStyle}" HorizontalAlignment="Stretch" />-->
+        <Grid Grid.Row="0" x:Name="ImageGridAfterPreprocessing">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Grid.Column="0"
+                    Style="{StaticResource BorderStyle}">
+                <TextBlock x:Name="TrainFacesAfterPreprocTxtBlock" 
+                               Text="Face Images For Train Face Recognition Algorithm After Preprocessing Step"
+                               Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+            </Border>
+            <Border Grid.Row="1"
+                        Grid.Column="0"
+                        Style="{StaticResource BorderStyle}"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <ListView x:Name="TrainImageAfterPreprocListView"
+                          ItemsSource="{Binding TrainFaces}">
+                    <ListView.View>
+                        <iv:CustomImageView ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                    </ListView.View>
+                </ListView>
+            </Border>
+            <GridSplitter Grid.RowSpan="2" Grid.Column="1" 
+                          Style="{StaticResource ResourceKey=VerGridSplitterStyle}"/>
+            <Border Grid.Row="0" Grid.Column="2"
+                    Style="{StaticResource BorderStyle}">
+                <TextBlock x:Name="TestFacesAfterPreprocTxtBlock" 
+                               Text="Face Images For Test Face Recognition Algorithm After Preprocessing Step"
+                               Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+            </Border>
+            <Border Grid.Row="1"
+                    Grid.Column="2"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    Style="{StaticResource BorderStyle}">
+                <Grid>
+                    <ListView x:Name="TestImageAfterPreprocListView"
+                                  
+                                  ItemsSource="{Binding TestFaces}">
+                        <ListView.View>
+                            <iv:CustomImageView ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

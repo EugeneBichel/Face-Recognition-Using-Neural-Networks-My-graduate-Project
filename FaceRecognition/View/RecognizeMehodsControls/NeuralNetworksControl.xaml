@@ -1,0 +1,169 @@
+﻿<controlsBase:RecognizeMethodControlBase x:Class="FaceRecognition.Controls.RecognizeMehodsControls.NeuralNetworksControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controlsBase="clr-namespace:FaceRecognition.Controls.RecognizeMehodsControls">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.ColumnSpan="4" Style="{StaticResource BorderStyle}">
+            <GroupBox Header="Settings" Padding="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Style="{StaticResource BorderStyle}">
+                        <GroupBox Header="Network Properties">
+                            <Grid Margin="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" 
+                                           x:Name="NumLayersTextBlock" 
+                                           Text="Number Of Layers: " 
+                                           Style="{StaticResource TextBlockStyle}"
+                                           HorizontalAlignment="Left"/>
+                                <ComboBox Grid.Row="0" Grid.Column="1" 
+                                          x:Name="LayersComboBox" 
+                                          SelectionChanged="LayersComboBox_SelectionChanged" 
+                                          Width="50" Height="25" Margin="5"
+                                          ItemsSource="{Binding Layers}"/>
+                                <TextBlock Grid.Row="0" Grid.Column="2" 
+                                           x:Name="MaxErrorTextBlock" 
+                                           Text="Maximum Error: " 
+                                           Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Right" />
+                                <TextBox Grid.Row="0" Grid.Column="3" 
+                                         x:Name="MaxErrorTextBox"
+                                         Text="{Binding MaxError}"
+                                         Style="{StaticResource TextBoxStyle}"
+                                         HorizontalAlignment="Stretch" Height="25" Margin="5" />
+                                <TextBlock Grid.Row="1" Grid.ColumnSpan="3" 
+                                           x:Name="NumInputUnitsTextBlock" 
+                                           Text="Number Of Input Units (For Two or Three Layer Net): " 
+                                           Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Left" />
+                                <TextBox Grid.Row="1" Grid.Column="3" 
+                                         x:Name="InputUnitsTextBox"
+                                         Text="{Binding InputUnits}"
+                                         Style="{StaticResource TextBoxStyle}"
+                                         HorizontalAlignment="Stretch" Height="25" Margin="5" />
+                                <TextBlock Grid.Row="2" Grid.ColumnSpan="3" 
+                                           x:Name="NumHiddenUnitsTextBlock" 
+                                           Text="Number Of Hidden Units (For Two or Three Layer Net): " 
+                                           Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Left" />
+                                <TextBox Grid.Row="2" Grid.Column="3" 
+                                         x:Name="HiddenUnitsTextBox"
+                                         Text="{Binding HiddenUnits}"
+                                         Style="{StaticResource TextBoxStyle}"
+                                         HorizontalAlignment="Stretch" Height="25" Margin="5" />
+                                <TextBlock Grid.Row="3" Grid.ColumnSpan="3" 
+                                           x:Name="NumOuputUnitsTextBlock" 
+                                           Text="Number Of Ouptup Units: " 
+                                           Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Left" />
+                                <TextBox Grid.Row="3" Grid.Column="3" 
+                                         x:Name="OutputUnitsTextBox"
+                                         Text="{Binding OutputUnits}"
+                                         Style="{StaticResource TextBoxStyle}"
+                                         HorizontalAlignment="Stretch" Height="25" Margin="5"/>
+                            </Grid>
+                        </GroupBox>
+                    </Border>
+                    <Border Grid.Row="1" Style="{StaticResource BorderStyle}">
+                        <Button x:Name="SaveSettingsButton" 
+                                HorizontalAlignment="Right" 
+                                Style="{StaticResource ButtonStyle}" 
+                                Width="100" 
+                                Content="Save Settings"
+                                Click="SaveSettingsButton_Click"
+                                ToolTip="Saving the settings requires to (re)train or load the network"/>
+                    </Border>
+                </Grid>
+            </GroupBox>
+        </Border>
+        <Border Grid.Row="1" Grid.ColumnSpan="4" Style="{StaticResource BorderStyle}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="2" 
+                           x:Name="StateTextBlock" 
+                           Text="State:" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBox Grid.Row="0" Grid.Column="3" 
+                           x:Name="StateTextBox" 
+                           Text="{Binding TrainStatus}" 
+                           Style="{StaticResource TextBoxStyle}"/>
+                <ListView Grid.Row="1" Grid.ColumnSpan="4"
+                          x:Name="StateListView" ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    
+                </ListView>
+                <TextBlock Grid.Row="2" Grid.Column="0" 
+                           x:Name="ErrorTextBlock" 
+                           Text="Error:" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBox Grid.Row="2" Grid.Column="1" 
+                           x:Name="ErrorTextBox" 
+                           Text="{Binding Error}" 
+                           Style="{StaticResource TextBoxStyle}"/>
+                <TextBlock Grid.Row="2" Grid.Column="2" 
+                           x:Name="IterationsTextBlock" 
+                           Text="Iterations:" 
+                           Style="{StaticResource TextBlockStyle}"/>
+                <TextBox Grid.Row="2" Grid.Column="3" 
+                           x:Name="IterationsTextBox" 
+                           Text="{Binding Iterations}" 
+                           Style="{StaticResource TextBoxStyle}"/>
+            </Grid>
+        </Border>
+        <Button Grid.Row="2" Grid.Column="0" 
+                x:Name="SaveButton" 
+                Content="Save Network" 
+                Style="{StaticResource ButtonStyle}" 
+                Width="100"
+                Click="SaveButton_Click"/>
+        <Button Grid.Row="2" Grid.Column="1" 
+                x:Name="LoadButton" 
+                Content="Load Network" 
+                Style="{StaticResource ButtonStyle}" 
+                Width="100"
+                Click="LoadButton_Click"/>
+        <Button Grid.Row="2" Grid.Column="2" 
+                x:Name="TrainButton" 
+                Content="Train Network" 
+                Style="{StaticResource ButtonStyle}" 
+                Width="100"
+                Click="TrainButton_Click"/>
+        <Button Grid.Row="2" Grid.Column="3" 
+                x:Name="RecognizeButton" 
+                Content="Recognize" 
+                Style="{StaticResource ButtonStyle}"
+                Width="100"
+                Click="RecognizeButton_Click"/>
+    </Grid>
+</controlsBase:RecognizeMethodControlBase>

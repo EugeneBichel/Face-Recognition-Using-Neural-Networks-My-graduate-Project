@@ -1,0 +1,133 @@
+﻿<UserControl x:Class="FaceRecognition.Controls.SelectionTrainTestImagesControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:bc="clr-namespace:BusyControl;assembly=BusyControl" 
+             xmlns:iv="clr-namespace:ImageView;assembly=ImageView" 
+             xmlns:controls="clr-namespace:FaceRecognition.Controls">
+    <Grid Grid.Row="1" Grid.ColumnSpan="2" x:Name="TrainTestImagesGrid" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Grid.Column="0"
+                    Style="{StaticResource BorderStyle}">
+            <TextBlock x:Name="TrainFacesTxtBlock" 
+                           Text="Face Images For Train Face Recognition Algorithm"
+                           Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+        </Border>
+        <Border Grid.Row="1"
+                Grid.Column="0"
+                Style="{StaticResource BorderStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" x:Name="NumberTrainImagesLabel" 
+                               Text="Number Train Images: " Margin="10,5,5,5"
+                               Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Column="1" x:Name="NumberTrainImagesValue" 
+                               Text="{Binding NumberTrainFaceImages}" Margin="5,5,5,5"
+                               Style="{StaticResource TextBlockStyle}"/>
+                <Button Grid.Column="2" x:Name="selectEvenImageBtn"
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Center"
+                        Style="{StaticResource ButtonStyle}"
+                        Content="Select Even Numbers of Face Images"
+                        ToolTip="Select Even Numbers of Face Images"
+                        Click="selectEvenImageBtn_Click"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="2"
+                    Grid.Column="0"
+                    Style="{StaticResource BorderStyle}"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListView x:Name="TrainImageListView"
+                          AllowDrop="true"
+                          Drop="DropTrainImage"
+                          ItemsSource="{Binding TrainImages}"
+                          SelectionChanged="TrainImageListView_SelectionChanged">
+                <ListView.View>
+                    <iv:CustomImageView ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                </ListView.View>
+            </ListView>
+        </Border>
+        <Border Grid.Row="3"
+                    Grid.Column="0"
+                    Style="{StaticResource BorderStyle}">
+            <Button x:Name="delSelTrainItemsBtn"
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Center"
+                        Style="{StaticResource ButtonStyle}"
+                        Content="Delete Selected Items"
+                        ToolTip="Delete Selected Items"
+                        IsEnabled="False"
+                        Click="delSelTrainItemsBtn_Click"/>
+        </Border>
+        <Border Grid.Column="2"
+                Style="{StaticResource BorderStyle}">
+            <TextBlock x:Name="TestFacesTxtBlock" 
+                           Text="Face Images For Test Face Recognition Algorithm"
+                           Style="{StaticResource ResourceKey=TextBlockStyle}"/>
+        </Border>
+        <Border Grid.Row="1"
+                Grid.Column="2"
+                Style="{StaticResource BorderStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" x:Name="NumberTestImagesLabel" 
+                               Text="Number Test Images: " Margin="10,5,5,5"
+                               Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock Grid.Column="1" x:Name="NumberTestImagesValue" 
+                               Text="{Binding NumberTestFaceImages}" Margin="10,5,5,5"
+                               Style="{StaticResource TextBlockStyle}"/>
+                <Button Grid.Column="2" x:Name="selectOddImageBtn"
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Center"
+                        Style="{StaticResource ButtonStyle}"
+                        Content="Select Odd Numbers of Face Images"
+                        ToolTip="Select Odd Numbers of Face Images"
+                        Click="selectOddImageBtn_Click"/>
+            </Grid>
+        </Border>
+        <Border Grid.Row="2"
+                    Grid.Column="2"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    Style="{StaticResource BorderStyle}">
+            <Grid>
+                <ListView x:Name="TestImageListView"
+                              AllowDrop="true"
+                              Drop="DropTestImage"
+                              ItemsSource="{Binding TestImages}"
+                              SelectionChanged="TestImageListView_SelectionChanged">
+                    <ListView.View>
+                        <iv:CustomImageView ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Border>
+        <Border Grid.Row="3"
+                    Grid.Column="2"
+                    Style="{StaticResource BorderStyle}">
+            <Button x:Name="delSelTestItemsBtn"
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Center"
+                        Style="{StaticResource ButtonStyle}"
+                        Content="Delete Selected Items"
+                        ToolTip="Delete Selected Items" 
+                        IsEnabled="False"
+                        Click="delSelTestItemsBtn_Click"/>
+        </Border>
+    </Grid>
+</UserControl>
